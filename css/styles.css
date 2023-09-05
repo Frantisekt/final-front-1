@@ -1,0 +1,394 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: solid red;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: 'Be Vietnam Pro';
+  
+}
+
+.best-of-the-month {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.best-of-the-month h2 {
+  display: flex;
+  justify-content: center;
+  margin: 2.5rem;
+  color: #242E53;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.best-of-the-month h5 {
+  font-size: 2.45rem;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: #1E1E26;
+  list-style: none;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0px 15px 0px;
+  flex-direction: row;
+  color: #FFF;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer-nav ul li {
+  list-style: none;
+  flex: 1;
+  padding: 10px 0px 5px 5px;
+}
+
+.footer-nav a:hover {
+  cursor: pointer;
+}
+
+.iconos-redes {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+
+.iconos-redes:hover {
+  cursor: pointer;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.footer-logo:hover {
+  cursor: pointer;
+}
+
+.copyright {
+  color: #8C8C94;
+  margin-bottom: 35px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  align-self: center;
+}
+
+.search-box {
+  display: flex;
+  
+
+  gap: 10px;
+}
+
+.search-bar {
+  border: none;
+  height: 40px;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  background: #FFF;
+}
+
+
+.search-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: none;
+  color: #FFF;
+  padding: 10px 20px 10px 20px;
+  gap: 10px;
+  border-radius: 50px;
+  background: #8B48BF;
+}
+
+.search-button:hover {
+  cursor: pointer;
+}
+
+.search-button:active {
+  color: #FFF;
+  background: #b14bff;
+  cursor: pointer;
+}
+
+.best-of-the-year h3 {
+  display: flex;
+
+}
+
+.best-of-the-year {
+  display: flex;
+  color: #FFF;
+  text-align: center;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  padding: 40px 50px;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  background-color: #3CDDF3;
+}
+
+
+.more {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.more button {
+  display: flex;
+  border: none;
+  color: #FFF;
+  width: 130px;
+  height: 44px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: #8B48BF;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.more button:hover {
+  cursor: pointer;
+}
+
+.more button:active {
+  background:#ffffff;
+  border: 3px #8B48BF;
+  color: #8B48BF;
+}
+
+
+.best-of-the-year button {
+  display: flex;
+  border: none;
+  color: #FFF;
+  width: 130px;
+  height: 44px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: #232C50;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.best-of-the-year button:active {
+  background: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+  color: #232C50;
+}
+
+.best-of-the-year button:hover {
+  cursor: pointer;
+}
+
+.cards-conteiner {
+  margin: 30px;
+}
+
+.cards-conteiner p {
+  color: #B9B9C1;
+}
+
+.cards-conteiner .name {
+  color: #3F4868;
+  margin: 20px 0px 0px 0px;
+  font-weight: 700;
+}
+
+.cards-conteiner .avatar {
+  margin-top: 40px;
+}
+
+
+.card-3 {
+  display: none;
+}
+
+.card-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+        
+}
+
+.card-2 p {
+  margin: 15px 20px 20px 20px;
+  text-align: center;
+}
+
+.card-1 {
+  display: none;
+}
+
+.formulario {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Media Queries */
+@media (min-width: 513px) {
+  .cards-conteiner {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .card-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+          
+  }
+
+  .card-1 p {
+    display: flex;
+    margin: 15px 20px 20px 20px;
+    text-align: center;
+  }
+
+  .card-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+          
+  }
+
+  .card-3 p {
+    display: flex;
+    margin: 15px 20px 20px 20px;
+    text-align: center;
+  }
+
+  .cards-conteiner .avatar {
+    margin-top: 40px;
+  }
+
+  .cards-conteiner .name {
+    color: #3F4868;
+    font-weight: 700;
+  }
+
+  .best-of-the-year {
+    flex-direction: row;
+    padding: 2em 3em;
+    justify-content: space-between;
+    background: #8B48BF;
+    text-align: left;
+  }
+
+  .best-of-the-year button {
+    color: #8B48BF;
+    background: #FFF;
+    font-weight: 500;
+  }
+
+  .best-of-the-year button:active {
+    background: #ccc8cf;
+    font-weight: 500;
+      
+  }
+
+  .best-of-the-year button:hover {
+    cursor: pointer;
+  }
+
+  .more {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 150px;
+  }
+  
+  .footer-logo {
+    justify-content: left;  
+  }
+
+  .iconos-redes {
+    width: 10em;
+    margin: 30px;  
+  }
+
+  footer {
+    display: flex;
+    padding: 4.5em 4.5em 0em 4.5em;
+    flex-direction: row-reverse;
+    display: grid;
+    grid-template-columns: 0.6fr 1fr 0.8fr; /* Para asignar la ubicacion de los elemntos del footer 
+                                    creamos tres columnas de igual ancho */
+  }
+
+  .link-redes {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: left;
+    grid-column: 1; /* Ubicado en la primera columna */
+    grid-row: 1; /* Ubicado en la primera fila */
+    width: 20vw;
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0;
+    grid-column: 2; /* Ubicado en la segunda columna */
+  }
+
+  .copyright {
+    text-align: center;
+    grid-column: 3; /* Ubicado en la tercera columna */
+    grid-row: 2; /* Ubicado en la segunda fila */
+  }
+
+  .formulario {
+    display: flex;
+    margin-top: 0px;
+    grid-column: 3; /* Ubicado en la tercera columna */
+    grid-row: 1; /* Ubicado en la primera fila */
+  }
+
+  .formulario form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: row;
+  }
+
+  .search-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .search-button {
+    height: 40px;
+  }
+
+  .search-bar {
+    padding: 0px;
+    text-align: center;
+  }
+}
