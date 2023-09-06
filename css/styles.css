@@ -8,14 +8,12 @@
 body {
   width: 100%;
   font-family: 'Be Vietnam Pro';
-  
 }
 
 .best-of-the-month {
   display: flex;
   flex-direction: column;
 }
-
 
 .best-of-the-month h2 {
   display: flex;
@@ -28,6 +26,11 @@ body {
 
 .best-of-the-month h5 {
   font-size: 2.45rem;
+}
+
+.footer-conteiner {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 footer {
@@ -71,6 +74,10 @@ footer {
   cursor: pointer;
 }
 
+.iconos-redes img:hover {
+  transform: scale(1.2);
+}
+
 .footer-logo {
   display: flex;
   justify-content: center;
@@ -91,8 +98,9 @@ footer {
 
 .search-box {
   display: flex;
-  
-
+  margin-top: 10px;
+  margin-bottom: 20px;
+  max-width: 100%;
   gap: 10px;
 }
 
@@ -101,11 +109,10 @@ footer {
   height: 40px;
   padding: 10px;
   align-items: center;
-  gap: 10px;
   border-radius: 50px;
   background: #FFF;
+  width: 100%;
 }
-
 
 .search-button {
   display: flex;
@@ -113,6 +120,7 @@ footer {
   align-items: center;
   border: none;
   color: #FFF;
+  height: 40px;
   padding: 10px 20px 10px 20px;
   gap: 10px;
   border-radius: 50px;
@@ -131,7 +139,6 @@ footer {
 
 .best-of-the-year h3 {
   display: flex;
-
 }
 
 .best-of-the-year {
@@ -148,7 +155,6 @@ footer {
   background-color: #3CDDF3;
 }
 
-
 .more {
   display: flex;
   justify-content: center;
@@ -157,14 +163,11 @@ footer {
 }
 
 .more button {
-  display: flex;
   border: none;
   color: #FFF;
   width: 130px;
   height: 44px;
   padding: 10px;
-  justify-content: center;
-  align-items: center;
   border-radius: 50px;
   background: #8B48BF;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
@@ -179,7 +182,6 @@ footer {
   border: 3px #8B48BF;
   color: #8B48BF;
 }
-
 
 .best-of-the-year button {
   display: flex;
@@ -203,7 +205,7 @@ footer {
 }
 
 .best-of-the-year button:hover {
-  cursor: pointer;
+  cursor: pointer; 
 }
 
 .cards-conteiner {
@@ -220,10 +222,13 @@ footer {
   font-weight: 700;
 }
 
+.cards-conteiner .name:hover {
+  cursor: pointer; 
+}
+
 .cards-conteiner .avatar {
   margin-top: 40px;
 }
-
 
 .card-3 {
   display: none;
@@ -232,8 +237,7 @@ footer {
 .card-2 {
   display: flex;
   flex-direction: column;
-  align-items: center;
-        
+  align-items: center;      
 }
 
 .card-2 p {
@@ -252,6 +256,7 @@ footer {
   margin-top: 30px;
 }
 
+
 /* Media Queries */
 @media (min-width: 513px) {
   .cards-conteiner {
@@ -262,8 +267,7 @@ footer {
   .card-1 {
     display: flex;
     flex-direction: column;
-    align-items: center;
-          
+    align-items: center;       
   }
 
   .card-1 p {
@@ -275,8 +279,7 @@ footer {
   .card-3 {
     display: flex;
     flex-direction: column;
-    align-items: center;
-          
+    align-items: center;       
   }
 
   .card-3 p {
@@ -306,12 +309,12 @@ footer {
     color: #8B48BF;
     background: #FFF;
     font-weight: 500;
+    margin-right: 5vw;
   }
 
   .best-of-the-year button:active {
     background: #ccc8cf;
-    font-weight: 500;
-      
+    font-weight: 500;   
   }
 
   .best-of-the-year button:hover {
@@ -326,69 +329,70 @@ footer {
   }
   
   .footer-logo {
-    justify-content: left;  
+    justify-content: left; 
+    margin: 0px 10px 40px 30px; 
   }
 
   .iconos-redes {
-    width: 10em;
-    margin: 30px;  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 30px 10px 20px 30px;  
   }
 
   footer {
     display: flex;
-    padding: 4.5em 4.5em 0em 4.5em;
-    flex-direction: row-reverse;
-    display: grid;
-    grid-template-columns: 0.6fr 1fr 0.8fr; /* Para asignar la ubicacion de los elemntos del footer 
-                                    creamos tres columnas de igual ancho */
+    justify-content: space-around
   }
 
   .link-redes {
     display: flex;
     flex-direction: column-reverse;
     align-items: left;
-    grid-column: 1; /* Ubicado en la primera columna */
-    grid-row: 1; /* Ubicado en la primera fila */
-    width: 20vw;
   }
 
   .footer-nav {
     display: flex;
-    flex-wrap: wrap;
-    margin-left: 0;
-    grid-column: 2; /* Ubicado en la segunda columna */
+    justify-content: space-between;
+  }
+
+  .footer-nav {
+    display: flex;
+    gap: 10vw;
   }
 
   .copyright {
     text-align: center;
-    grid-column: 3; /* Ubicado en la tercera columna */
-    grid-row: 2; /* Ubicado en la segunda fila */
+    align-self: flex-end;
+    margin-right: 8%;
   }
 
   .formulario {
     display: flex;
     margin-top: 0px;
-    grid-column: 3; /* Ubicado en la tercera columna */
-    grid-row: 1; /* Ubicado en la primera fila */
+    max-width: 300px;
   }
 
   .formulario form {
     display: flex;
-    gap: 10px;
     flex-wrap: row;
+    max-width: 300px;
   }
 
-  .search-box {
+  .footer-conteiner {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
-  }
-
-  .search-button {
-    height: 40px;
-  }
-
-  .search-bar {
-    padding: 0px;
-    text-align: center;
+    gap: 10px;
+    max-width: 1250px;
+    margin-left: 4em;
+    margin-right: 2em;
+    margin-top: 2em;
   }
 }
+
+
+
+
+
